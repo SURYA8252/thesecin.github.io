@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>index</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+        <link href="//cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" />
+    <link href="//cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" />
+
+        <link rel="stylesheet" type="text/css" href="indexcss.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header" id="topheader">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container text-uppercase p-2">
+                    <a class="navbar-brand font-weight-bold text-danger" href="#">The Sec</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon bg-warning"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto text-uppercase">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#top">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#price">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#images">Images</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="help.jsp">Enquiry</a>
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+            <section class="header-section">
+                <div class="center-div">
+                    <h1 class="font-weight-bold ml2">A Skool of English Language</h1>
+                    <script>
+                        var textWrapper = document.querySelector('.ml2');
+                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                        anime.timeline({loop: true})
+                                .add({
+                                    targets: '.ml2 .letter',
+                                    scale: [4, 1],
+                                    opacity: [0, 1],
+                                    translateZ: 0,
+                                    easing: "easeOutExpo",
+                                    duration: 950,
+                                    delay: (el, i) => 70 * i
+                                }).add({
+                            targets: '.ml2',
+                            opacity: 0,
+                            duration: 1000,
+                            easing: "easeOutExpo",
+                            delay: 1000
+                        });
+                    </script>
+                    <p style="font-size: 1.3rem; padding: 10px 0 20px 0; color:black;">The Last Word of Language Lovers</p>
+                    <div class="header-buttons">
+                        <a href="#about">AboutUs</a>
+                        <a href="tel:+91 7004238489" onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});">Contact</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--......................header part end..................-->
+
+        <!--......................three extra header div start.....-->
+        <section class="header-extradiv">
+            <div class="container">
+                <div class="row">
+                    <div class="extradiv col-lg-4 col-md-4 col-12">
+                        <a href="#"><i class="fa fa-desktop fa-3x"></i></a>
+                        <h2>EASY TO LEARN ENGLISH</h2>
+                        <p>Join English Speaking classes and learn to talk in English confidently. 
+                            Online batches for professionals and kids are available as per your needs. 
+                            Expert trainers. Interactive courses. Online sessions.</p>
+                    </div>
+                    <div class="extradiv col-lg-4 col-md-4 col-12">
+                        <a href="#"><i class="fa fa-trophy fa-3x"></i></a>
+                        <h2>SPEAK ENGLISH WITH CONFIDENCE</h2>
+                        <p>Become Fluent, Confident In English With Flexible Custom-Made Plans and Personal Trainers. 
+                            Boost your professional or social life with fluent communication in less than 100 days. 
+                            Super Affordable.Flexible Timings.</p>
+                    </div>
+                    <div class="extradiv col-lg-4 col-md-4 col-12">
+                        <a href="#"><i class="fa fa-magic fa-3x"></i></a>
+                        <h2>IMPROVE YOUR PROFESSIONAL</h2>
+                        <p>
+                            If you're a professional looking to improve your business English, consider incorporating these into your learning plan: 
+                            Set specific goals. 
+                            Learning is best done by setting specific goals that are challenging yet achievable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--......................three extra header div end.....-->
+
+        <!--.................about us start................-->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>About Us</h2>
+                        <div class="about-content">
+                            <i>A Number of language and dialects are spoken in India of these eighteen Language have been
+                                Specified in Eight schedule of the constitution.A Sub-Continent like India is badly in need of
+                                A'Link Language" not only as a means of communication but also for fostering a common cultural
+                                goals and Ideals and English can serve the purpose best.</i>
+                        </div>
+                    </div>
+                    <div class="col-md-6 skills-bar">
+                        <p>Spoken and Written English</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%;">90%</div>
+                        </div>
+                        <p>Competitive English Courses</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%;">85%</div>
+                        </div>
+                        <p>Professional Courses</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%;">95%</div>
+                        </div>
+                        <p>Academic Classes</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--.................about us end..................-->
+        <!--.............course section start.....-->
+        <section id="promo">
+            <div class="container">
+                <p>A Skool of English Language</p>
+                <a href="help.jsp" class="btn btn-primary">Contact Us</a>
+            </div>
+        </section>
+        <section id="price">
+            <div class="container-fluid">
+                <h1 style="text-align: center;">Our Courses</h1>
+                <div class="row">
+                    <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="singal-price">
+                            <div class="price-head">
+                                <h4>Spoken and Written English</h4>
+                                <p>4/<span>month</span></p>
+                            </div>
+                            <div class="price-content">
+                                <ul>
+                                    <li><i class="fa fa-check-circle"></i>Basic Grammer</li>
+                                    <li><i class="fa fa-check-circle"></i>Sentence Arrangement</li>
+                                    <li><i class="fa fa-check-circle"></i>Collection of Words</li>
+                                    <li><i class="fa fa-check-circle"></i>Group Discussion&PI</li>
+                                    <li><i class="fa fa-check-circle"></i>Debates&Demonstrations</li>
+                                    <li><i class="fa fa-check-circle"></i>Pronunciation</li>
+                                    <li><i class="fa fa-check-circle"></i>Speech Contest</li>
+                                    <li><i class="fa fa-check-circle"></i>Backup classes&Doubt.</li>
+                                    <li><i class="fa fa-check-circle"></i>Advanced Grammer</li>
+                                    <li><i class="fa fa-check-circle"></i>Phonetics phrasal verbs and Idioms</li>
+                                    <li><i class="fa fa-check-circle"></i>GD</li>
+                                    <li><i class="fa fa-check-circle"></i>PI and personality development</li>
+                                </ul>
+                            </div>
+                            <div class="price-button">
+                                <a class="buy-btn" href="help.jsp">Join Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="singal-price">
+                            <div class="price-head">
+                                <h4>Competitive English Courses</h4>
+                                <p>3/<span>month</span></p>
+                            </div>
+                            <div class="price-content">
+                                <ul>
+                                    <li><i class="fa fa-check-circle"></i>Banking</li>
+                                    <li><i class="fa fa-check-circle"></i>PO</li>
+                                    <li><i class="fa fa-check-circle"></i>SSC</li>
+                                    <li><i class="fa fa-check-circle"></i>Railways</li>
+                                    <li><i class="fa fa-check-circle"></i>Civil Services</li>
+                                    <li><i class="fa fa-check-circle"></i>Air Force</li>
+                                    <li><i class="fa fa-check-circle"></i>NDA CDS&Other</li>
+                                    <li><i class="fa fa-check-circle"></i>Grammer</li>
+                                    <li><i class="fa fa-check-circle"></i>Words</li>
+                                    <li><i class="fa fa-check-circle"></i>Passage</li>
+                                    <li><i class="fa fa-check-circle"></i>Cloze Test</li>
+                                    <li><i class="fa fa-check-circle"></i>Sentence Arrangement</li>
+                                    <li><i class="fa fa-check-circle"></i>Double fillers with sets.</li>
+                                </ul>
+                            </div>
+                            <div class="price-button">
+                              
+                                <a class="buy-btn" href="help.jsp">Join Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="singal-price">
+                            <div class="price-head">
+                                <h4>Professional Courses</h4>
+                                <p>3/<span>month</span></p>
+                            </div>
+                            <div class="price-content">
+                                <ul>
+                                    <li><i class="fa fa-check-circle"></i>MBA</li>
+                                    <li><i class="fa fa-check-circle"></i>MCA</li>
+                                    <li><i class="fa fa-check-circle"></i>BBA</li>
+                                    <li><i class="fa fa-check-circle"></i>BCA</li>
+                                    <li><i class="fa fa-check-circle"></i>Other Professional</li>
+                                    <li><i class="fa fa-check-circle"></i>Communication Skills</li>
+                                    <li><i class="fa fa-check-circle"></i>Soft Skills</li>
+                                    <li><i class="fa fa-check-circle"></i>Phonetics&Personality Development</li>
+                                    <li><i class="fa fa-check-circle"></i>Body Language</li>
+                                    <li><i class="fa fa-check-circle"></i>Appearance</li>
+                                    <li><i class="fa fa-check-circle"></i>Gesture</li>
+                                    <li><i class="fa fa-check-circle"></i>Posture</li>
+                                    <li><i class="fa fa-check-circle"></i>Color&Space Language</li>
+                                </ul>
+                            </div>
+                            <div class="price-button">
+                                <a class="buy-btn" href="help.jsp">Join Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="singal-price">
+                            <div class="price-head">
+                                <h4>Academic Classes</h4>
+                                <p>6/<span>month</span></p>
+                            </div>
+                            <div class="price-content">
+                                <ul>
+                                    <li><i class="fa fa-check-circle"></i>9th</li>
+                                    <li><i class="fa fa-check-circle"></i>10th</li>
+                                    <li><i class="fa fa-check-circle"></i>12th</li>
+                                    <li><i class="fa fa-check-circle"></i>BSEB</li>
+                                    <li><i class="fa fa-check-circle"></i>CBSE</li>
+                                    <li><i class="fa fa-check-circle"></i>Grammer</li>
+                                    <li><i class="fa fa-check-circle"></i>Books</li>
+                                    <li><i class="fa fa-check-circle"></i>Questions Answer.</li>
+                                </ul>
+                            </div>
+                            <div class="price-button">
+                                <a class="buy-btn" href="help.jsp">Join Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--...............course section end.....-->
+        <section class="project-work">
+            <div class="container headings text-center">
+                    <div>
+                <p class="text-center font-weight-bold">more than 20 years old</p>
+                    </div>
+            </div>
+            <div class="container d-flex justify-content-around align-items-center">
+                <div>
+                <h1 class="count">2000</h1>
+                <p>Student</p>
+              </div>
+                <div>
+                <h1 class="count"></h1>
+                <p>CMS Installtion</p>
+              </div>
+                <div>
+                    <h1 class="count">700</h1>
+                <p>CMS Installtion</p>
+              </div>
+                <div>
+                    <h1 class="count">2500</h1>
+                <p>CMS Installtion</p>
+              </div>
+                </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+        <script>
+            $('.count').counterUp({
+                delay:10,
+                time:3000
+            })
+        </script>
+        
+        <!--........................Images starts................-->
+        <section id="images">
+         <div class="container">
+            <h3 class="text-center">Our Images</h3>
+            <div class="row mt-40">
+                <div class="col-md-4 col-sm-6">
+                    <div class="box1">
+                        <img src="images/gallary5.jpg" alt="">
+                        <h3 class="title">Williamson</h3>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="box1">
+                        <img src="http://bestjquery.com/tutorial/hover-effect/demo206/images/img-2.jpg" alt="" class="img-thumbn">
+                        <h3 class="title">Kristiana</h3>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="box1">
+                        <img src="http://bestjquery.com/tutorial/hover-effect/demo206/images/img-3.jpg" alt="">
+                        <h3 class="title">Kristiana</h3>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-40">
+                <div class="col-md-4 col-sm-6">
+                    <div class="box1">
+                        <img src="images/gallary16.jpg">
+                        <h3 class="title">Williamson</h3>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="box1">
+                        <img src="images/gallary17.jpg" class="img-thumbn">
+                        <h3 class="title">Kristiana</h3>
+                        <ul class="icon">
+                            <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="box1">
+                        <img src="images/gallary18.jpg">
+                        <h3 class="title">Kristiana</h3>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+    </section>
+        <!--........................Images end................-->
+
+        <!--........................Footer start................-->
+               <!-- Footer -->
+               <br />
+               <br />
+<!-- Footer -->
+<section id="contact">
+<footer class="page-footer font-small bg-warning mdb-color pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-center">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">The Sec</h6>
+        <p>The Language courses contains practice in oral and written skills and emphasize conversation.
+          Modern Teaching methods give
+          the opportunity.</p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+        <p>
+          <a href="#top">Home</a>
+        </p>
+        <p>
+          <a href="#about">About us</a>
+        </p>
+        <p>
+          <a href="#price">Courses</a>
+        </p>
+        <p>
+          <a href="#images">Images</a>
+        </p>
+        <p>
+          <a href="admin.jsp">Admin</a>
+        </p>
+        <p>
+          <a href="help.jsp">Help</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 text-left">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Maps</h6>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.8593251395996!2d85.1609130149703!3d25.609590383705925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed59047cc9f90f%3A0x9ebe426a9d46145c!2sThe%20SEC!5e0!3m2!1sen!2sin!4v1618569412099!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+      </div>
+
+      <!-- Grid column -->
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p>
+          <i class="fa fa-home mr-3"></i></p>
+        <p>
+          <i class="fa fa-envelope mr-3"></i> info@gmail.com</p>
+        <p>
+          <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+        <p>
+          <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Footer links -->
+
+    <hr>
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <!--Copyright-->
+        <p class="text-center text-md-left">© 2020 Copyright:
+          <a href="#top">
+              <strong> thesec.in&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;develop by LogicoolItech.com</strong>
+          </a>
+        </p>
+        
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+
+        <!-- Social buttons -->
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+</footer>
+</section>
+<!-- Footer -->
+<!-- Footer -->
+        <!--........................Footer end................-->
+    <script src="js/smooth-scroll.js"></script>
+        <script>
+            var scroll=new SmoothScroll('a[href*="#"]');
+        </script>
+    </body>
+</html>
